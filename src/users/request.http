@@ -6,3 +6,21 @@ Content-Type: application/json
     "email" : "abdullah@mir.mir",
     "password":"Mir123!@#"
 }
+
+### Find a particular user with given ID
+GET http://localhost:3000/auth/2
+
+### find all user with a given email
+GET http://localhost:3000/auth?email=abdullah@mir.mir
+
+### Delete a user given id
+DELETE http://localhost:3000/auth/23
+
+### update user
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email": "mir@mir.com",
+    "password":"Ami1263"
+}
